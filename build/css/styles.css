@@ -425,7 +425,34 @@ template {
   display: none;
 }
 
-h1 {
-  font-family: "HelveticaNeueCyr";
-  font-size: 25px;
+.container {
+  width: 100%;
+  width: 274px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 21px;
+}
+
+.header {
+  width: 100%;
+  background: url("/images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 74px;
+}
+
+.header__text {
+  color: #ffffff;
+  font-family: "Helvetica";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0.48px;
+  margin: 0 auto;
+  text-align: center;
+  width: 67%;
 }
