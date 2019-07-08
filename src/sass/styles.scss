@@ -1,4 +1,11 @@
 /*
    Import partials below
 */
+@import './variables.scss';
+@import './fonts.scss';
+@import './basic.scss';
 @import './normalize';
+h1 {
+   font-family: "HelveticaNeueCyr";
+   font-size: 25px;
+}
