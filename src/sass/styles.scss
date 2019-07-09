@@ -5,7 +5,10 @@
 @import './fonts.scss';
 @import './basic.scss';
 @import './normalize';
+@import './container-footer';
+@import './section-contacts';
+
 h1 {
-   font-family: "HelveticaNeueCyr";
-   font-size: 25px;
+  font-family: 'HelveticaNeueCyr';
+  font-size: 25px;
 }

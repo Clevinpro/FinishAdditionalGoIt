@@ -1,0 +1,140 @@
+.section-contacts {
+  background-image: url('../images/icon-wave_mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-top: 70px;
+}
+
+.site-logo {
+  margin: 0 auto 24px;
+}
+
+.address-contacts {
+  margin-bottom: 26px;
+}
+
+.company-address,
+.company-tel {
+  text-align: center;
+  font-size: 14px;
+  font-family: $font-Helvetica;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 0.851);
+  line-height: 1.714;
+}
+
+.address {
+  margin-bottom: 28px;
+}
+
+.application-socials {
+  margin: 0 auto 36px;
+}
+
+.btn__application {
+  background-image: linear-gradient(270deg, rgb(222, 71, 236) 0%, rgb(117, 168, 249) 100%);
+  box-shadow: 5.5px 9.526px 16px 0px rgba(73, 119, 237, 0.23);
+  width: 270px;
+  height: 54px;
+  border: none;
+  border-radius: 27px;
+  font-family: $font-Helvetica;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 1.2;
+  display: block;
+  margin: 0 auto 36px;
+}
+
+.socials-link {
+  display: block;
+}
+
+.socials-link__svg {
+  width: 42px;
+  height: 42px;
+}
+
+.socials {
+  width: 162px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.legal-notice__item {
+  text-align: center;
+  font-family: $font-Helvetica;
+  font-size: 13px;
+  color: rgba(106, 112, 123, 0.549);
+  line-height: 1.923;
+}
+
+.legal-notice {
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 767px) {
+  .section-contacts {
+    background-image: url('../images/icon-wave.svg');
+    padding-top: 86px;
+  }
+
+  .site-logo {
+    margin: 0 0 24px;
+  }
+
+  .address-contacts {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    margin-bottom: 46px;
+  }
+
+  .company-address,
+  .company-tel {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .address {
+    margin: 0 82px 0 0;
+  }
+
+  .legal-notice {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .application-socials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 54px;
+
+    &::after {
+      position: absolute;
+      bottom: -14px;
+      right: 0;
+      content: '';
+      display: block;
+      background-image: url('../images/rocket.png');
+      width: 129px;
+      height: 202px;
+    }
+  }
+
+  .btn__application {
+    width: 240px;
+    margin: 0 40px 0 0;
+  }
+
+  .socials {
+    margin: 6px 0 0 0;
+  }
+
+}
