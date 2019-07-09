@@ -7,31 +7,38 @@
 @import './normalize';
 .container {
    width: 100%;
-   width: 274px;
    margin: 0 auto;
    padding: 0;
-   padding-top: 21px;
    
+ 
+}
 
-   
+.container__header{
+   padding-top: 21px;
+   padding-bottom: 105px;
 }
 .header{
    width: 100%;
-   padding-bottom: 105px;
    height: auto;
-   background: url("/images/header-bg.png");
-   background-repeat: no-repeat;
-   background-size: cover;
+   padding-bottom: 105px;
    background-image: url('/images/header-bg.svg');
    background-position: bottom;
-   background-repeat: repeat;
+   background-repeat: no-repeat;
    background-size: cover;
    position: relative;
    z-index: 1;
 }
+
+.nav {
+   margin-bottom: 74px;
+}
+.visually{
+   display: none;
+}
 .logo {
    display: block;
-   margin-bottom: 74px;
+   padding-left: 21px;
+  
 }
 .header__text {
    color: $color-white;
@@ -42,7 +49,8 @@
    letter-spacing: 0.48px;
    margin: 0 auto;
    text-align: center;
-   width: 67%;
+   padding-left: 70px;
+   padding-right: 68px;
    margin-bottom: 35px;
 }
 .header__headline{
@@ -67,12 +75,84 @@
    letter-spacing: 0.9px;
    text-decoration: none;
    text-align: center; 
+   
 }
 .header::after {
-   content: url('images/kids.svg');
+   content: '';
+   background-image: url('/images/kids.svg');
+   width: 100%;
+   height: 50%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
    position: absolute;
    left: 50%;
-   bottom: -35px;
+   top: 83%;
    z-index: 2222;
    transform: translate(-50%,-50%);
+}
+.logo img {
+   width: 84px;
+   height: 22px;
+}
+
+
+@media (min-width: 768px) {
+   .visually{
+      display: block;
+   }
+   .container {
+      width: 100%;
+      max-width: 1232px;
+      width: 711px; 
+      margin: 0 auto;
+   }
+   .nav{
+      display: flex;
+      justify-content: space-around;
+      align-items:center;
+      width: 396px;
+   }
+   .logo{
+      display: block;
+   }
+   .logo img {
+      width: 110px;
+      height: 29px;
+   }
+   .nav__item{
+      margin: 0;
+      padding: 0;
+      width: 396px;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+   }
+   .nav__link {
+      color: $color-white;
+      font-family: $font-Helvetica;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 59.27px;
+      letter-spacing: 0.75px;
+      text-transform: capitalize;
+      text-decoration: none;
+
+   }
+   .header::after{
+      width: 100%;
+      height: 60%;
+   }
+   .header__text{
+      letter-spacing: 0.6;
+      font-size: 20px;
+   }
+   .header__headline{
+      font-size: 35px;
+      line-height: 42px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      padding-left: 119px;
+      padding-right: 119px;
+   }
 }
