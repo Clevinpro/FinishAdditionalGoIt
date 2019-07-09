@@ -20,6 +20,7 @@
 .header{
    width: 100%;
    height: auto;
+   text-align: center;
    padding-bottom: 105px;
    background-image: url('/images/header-bg.svg');
    background-position: bottom;
@@ -66,9 +67,15 @@
    margin-bottom: 36px;
   
 }
+.nav__link{
+   border-bottom: 1px solid transparent;
+}
+.nav__link:hover{
+   color:$color-yeollow;
+   border-bottom: 1px solid $color-yeollow;
+}
 .header__more{
-   display: block;
-   margin: 0 auto;
+   border-bottom: 2px solid $color-grey;
    color: $color-white;
    font-family: $font-Helvetica;
    font-size: 15px;
@@ -77,6 +84,7 @@
    letter-spacing: 0.9px;
    text-decoration: none;
    text-align: center; 
+   
    
 }
 .header::after {
@@ -144,7 +152,12 @@
       letter-spacing: 0.75px;
       text-transform: capitalize;
       text-decoration: none;
+      border-bottom: 1px solid transparent;
 
+   }
+   .nav__link:hover{
+      color:$color-yeollow;
+      border-bottom: 1px solid $color-yeollow;
    }
    .header::after{
       width: 100%;

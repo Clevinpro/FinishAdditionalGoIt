@@ -440,6 +440,7 @@ template {
 .header {
   width: 100%;
   height: auto;
+  text-align: center;
   padding-bottom: 105px;
   background-image: url("/images/header-bg.svg");
   background-position: bottom;
@@ -489,9 +490,17 @@ template {
   margin-bottom: 36px;
 }
 
+.nav__link {
+  border-bottom: 1px solid transparent;
+}
+
+.nav__link:hover {
+  color: #fec02b;
+  border-bottom: 1px solid #fec02b;
+}
+
 .header__more {
-  display: block;
-  margin: 0 auto;
+  border-bottom: 2px solid #797c7e;
   color: #ffffff;
   font-family: "Helvetica";
   font-size: 15px;
@@ -572,6 +581,12 @@ template {
     letter-spacing: 0.75px;
     text-transform: capitalize;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .nav__link:hover {
+    color: #fec02b;
+    border-bottom: 1px solid #fec02b;
   }
 
   .header::after {
