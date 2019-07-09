@@ -5,7 +5,12 @@
 @import './fonts.scss';
 @import './basic.scss';
 @import './normalize';
-h1 {
-   font-family: "HelveticaNeueCyr";
-   font-size: 25px;
-}
+
+// section-4 test
+@import './helpers/placeholders-s4test';
+@import './components/section4_test';
+
+// h1 {
+//    font-family: "HelveticaNeueCyr";
+//    font-size: 25px;
+// }

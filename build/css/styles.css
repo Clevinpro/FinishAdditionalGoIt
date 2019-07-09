@@ -41,9 +41,12 @@ body {
   padding: 0;
 }
 
+*,
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -425,7 +428,73 @@ template {
   display: none;
 }
 
-h1 {
-  font-family: "HelveticaNeueCyr";
-  font-size: 25px;
+.s4test_form__title,
+.s4test_form__bkt {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1038px;
+  padding: 40px 250px 40px 224px;
+}
+
+.s4test {
+  height: 1000px;
+  padding-top: 196px;
+  background: url("../images/section-4-bg.png") no-repeat;
+  background-position: 0 0;
+}
+
+.s4test__title {
+  position: relative;
+  width: 538px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  font-family: "Helvetica";
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.s4test__title::before {
+  display: inline-block;
+  content: '';
+  width: 120px;
+  height: 120px;
+  background: url("../images/icon-sputnik.png") no-repeat center;
+  position: absolute;
+  top: -142px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.s4test__form {
+  max-width: 1038px;
+  max-height: 702px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.s4test_form__title {
+  color: #2c2c2c;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.s4test_form__bkt {
+  color: #fec02b;
+}
+
+.s4test_form__text {
+  font-family: "Helvetica";
+  color: #797c7e;
+  line-height: 30px;
+  font-size: 16px;
 }
