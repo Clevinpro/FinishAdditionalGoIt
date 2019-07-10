@@ -3,17 +3,17 @@
 */
 
 @font-face {
-  font-family: "Oswald";
+  font-family: "Oswald-Bold";
   src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Oswald";
+  font-family: "Oswald-Regular";
   src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Oswald";
+  font-family: "Oswald-Light";
   src: url("../fonts/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald-Light.woff") format("woff");
 }
 
@@ -423,6 +423,112 @@ template {
 
 [hidden] {
   display: none;
+}
+
+* {
+  padding: 0 auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 300px;
+}
+
+/*SKILLS ITSELF BLOCK*/
+
+.skills_list {
+  list-style: none;
+}
+
+.skills_title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.number1 {
+  color: #c7007c;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.number2 {
+  color: #eec14d;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.number3 {
+  color: #5f7cec;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.skills_img {
+  width: 138px;
+  height: 138px;
+  margin-bottom: 30px;
+}
+
+.skills_description {
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 14px;
+}
+
+.sk-desc-b {
+  font-family: "HelveticaNeueCyr-Bold";
+  font-size: 14px;
+}
+
+.skills_list_basic {
+  padding: 0 10px 0 10px;
+  max-width: 290px;
+}
+
+.skills-block {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.m5-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 50px 0 20px 0;
+  font-family: "Oswald-Bold";
+  text-align: center;
+}
+
+.m5-title::before {
+  content: '[';
+  color: #f3d071;
+}
+
+.m5-title::after {
+  content: ']';
+  color: #f3d071;
+}
+
+.enroll-btn {
+  background-color: #f3d071;
+  border: none;
+  height: 55px;
+  width: 270px;
+  border-radius: 30px;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 10px 20px #f9e8bd, 0 6px 6px #f9e8bd;
+  font-family: "HelveticaNeueCyr-Bold";
+  color: #fff;
+  font-size: 13px;
+}
+
+.enroll-btn:hover {
+  background-color: #e4c162;
+  cursor: pointer;
+  box-shadow: none;
 }
 
 .container {
