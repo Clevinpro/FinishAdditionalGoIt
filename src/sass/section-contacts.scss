@@ -88,7 +88,7 @@
   }
 
   .address-contacts {
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     align-items: flex-end;
     margin-bottom: 46px;
@@ -122,7 +122,7 @@
       right: 0;
       content: '';
       display: block;
-      background-image: url('../images/rocket.png');
+      background-image: url('../images/rocket-tablet.png');
       width: 129px;
       height: 202px;
     }
@@ -137,4 +137,57 @@
     margin: 6px 0 0 0;
   }
 
+}
+
+@media screen and (min-width: 1479px) {
+  .section-contacts {
+    padding-top: 200px;
+  }
+
+  .application-socials {
+    &::after {
+      background-image: url('../images/rocket-desk.png');
+      width: 324px;
+      height: 515px;
+    }
+  }
+
+  .legal-notice {
+    width: 638px;
+  }
+
+  .address-contacts {
+    width: 500px;
+    margin: 0 116px 96px 0;
+  }
+
+  .application-socials {
+    width: 280px;
+
+    &::after {
+      right: -564px;
+      bottom: -246px;
+    }
+  }
+
+  .application-socials {
+    display: inline-flex;
+    vertical-align: top;
+    margin: 52px 0 0 0;
+    position: relative;
+
+    &>.socials {
+      position: absolute;
+      top: 188px;
+      left: 118px;
+    }
+  }
+
+  .address {
+    margin: 0 114px 0 0;
+  }
+
+  .legal-notice {
+    padding-bottom: 80px;
+  }
 }

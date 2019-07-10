@@ -10,3 +10,10 @@
     padding: 0 48px 0 82px;
   }
 }
+
+@media screen and (min-width: 1479px) {
+  .container-footer {
+    width: 1479px;
+    padding: 0;
+  }
+}

@@ -540,7 +540,7 @@ h1 {
   }
 
   .address-contacts {
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     align-items: flex-end;
     margin-bottom: 46px;
@@ -575,7 +575,7 @@ h1 {
     right: 0;
     content: '';
     display: block;
-    background-image: url("../images/rocket.png");
+    background-image: url("../images/rocket-tablet.png");
     width: 129px;
     height: 202px;
   }
@@ -587,5 +587,61 @@ h1 {
 
   .socials {
     margin: 6px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1479px) {
+  .container-footer {
+    width: 1479px;
+    padding: 0;
+  }
+
+  .section-contacts {
+    padding-top: 200px;
+  }
+
+  .application-socials::after {
+    background-image: url("../images/rocket-desk.png");
+    width: 324px;
+    height: 515px;
+  }
+
+  .legal-notice {
+    width: 638px;
+  }
+
+  .address-contacts {
+    width: 500px;
+    margin: 0 116px 96px 0;
+  }
+
+  .application-socials {
+    width: 280px;
+  }
+
+  .application-socials::after {
+    right: -564px;
+    bottom: -246px;
+  }
+
+  .application-socials {
+    display: inline-flex;
+    vertical-align: top;
+    margin: 52px 0 0 0;
+    position: relative;
+  }
+
+  .application-socials > .socials {
+    position: absolute;
+    top: 188px;
+    left: 118px;
+  }
+
+  .address {
+    margin: 0 114px 0 0;
+  }
+
+  .legal-notice {
+    padding-bottom: 80px;
   }
 }
