@@ -6,8 +6,7 @@
 @import './fonts.scss';
 @import './basic.scss';
 @import './normalize';
-<<<<<<< HEAD
-@import './teacher.scss';
+
 
 .container {
    width: 100%;
@@ -157,15 +156,14 @@
       text-transform: capitalize;
       text-decoration: none;
       border-bottom: 1px solid transparent;
-=======
->>>>>>> 7c821bd1a80b2695f986f312927e87b1b44c389c
+   }}
 
 // section-4 test
 @import './visuallyhidden';
 @import './helpers/placeholders-s4t';
 @import './components/section4_test';
 @import './components/media_s4t';
-
+@import './components/teacher.scss';
 // h1 {
 //    font-family: "HelveticaNeueCyr";
 //    font-size: 25px;
