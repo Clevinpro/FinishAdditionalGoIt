@@ -26,7 +26,7 @@
         }
     &__list {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: nowrap;
         justify-content: space-around;
         }
     &__item {
@@ -137,11 +137,15 @@
         }
     }
     .teacher__list {
-        width: 1220px;
+        max-width: 1220px;
+        flex-wrap: nowrap;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
     }
 }
+
 @media (max-width: 500px) {
-    
     .button__slider {
         top: 160px;
         &--left {
@@ -151,14 +155,24 @@
             left: 720px;
         }
     }
-    .teacher__list {
-        width: 1220px;
-    }
-    .teacher__name--box {
+    .teacher {
+        &__list {
+            flex-wrap: nowrap;
+        
+        &__name--box {
         left: 25px;
-    }
-    .teacher__item {
-        width: 270px;
+            }
+        &__item {
+            width: 270px;
+        &:first-of-type {
+            transform: translateX(-50%);
+            position: relative;
+            }
+        &:last-of-type {
+            transform: translateX(50%);
+            position: relative;
+            }      
+        }  
+        }
     }
 }
-

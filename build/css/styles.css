@@ -469,7 +469,7 @@ template {
 
 .teacher__list {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: nowrap;
   justify-content: space-around;
 }
 
@@ -809,7 +809,12 @@ template {
   }
 
   .teacher__list {
-    width: 1220px;
+    max-width: 1220px;
+    flex-wrap: nowrap;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
   }
 }
 
@@ -827,14 +832,26 @@ template {
   }
 
   .teacher__list {
-    width: 1220px;
+    flex-wrap: nowrap;
   }
 
-  .teacher__name--box {
+  .teacher__list__name--box {
     left: 25px;
   }
 
-  .teacher__item {
+  .teacher__list__item {
     width: 270px;
+  }
+
+  .teacher__list__item:first-of-type {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+  }
+
+  .teacher__list__item:last-of-type {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    position: relative;
   }
 }
