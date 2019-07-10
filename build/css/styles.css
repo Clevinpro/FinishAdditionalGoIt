@@ -436,16 +436,96 @@ template {
   font-size: 20px;
   font-style: "Oswald";
   text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
 .teacher__header--modif {
   color: #fec02b;
 }
 
+.teacher__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.teacher__item {
+  position: relative;
+  height: 580px;
+  width: 380px;
+  background: #fcfcfe;
+}
+
+.teacher__item:not(:last-of-type) {
+  margin-right: 40px;
+}
+
 .teacher__img {
   width: 380px;
   height: 290px;
   background-size: inherit;
+  margin-bottom: 30px;
+}
+
+.teacher__name--box {
+  background: #187af0;
+  width: 220px;
+  height: 35px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  top: 270px;
+  left: 30px;
+  font-style: "Helvetica";
+  font-size: 16px;
+}
+
+.teacher__list,
+.teacher__skills {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.teacher__skills {
+  padding-left: 10px;
+}
+
+.teacher__skills--item {
+  text-align: start;
+  color: #888b94;
+  font-style: "Helvetica";
+}
+
+.teacher__tasks {
+  padding-left: 10px;
+  color: #282828;
+  font-weight: bold;
+  font-style: "Helvetica";
+}
+
+.button__slider {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  box-shadow: 0px 11px 100px -23px black;
+}
+
+.button__slider:hover,
+.button__slider:focus {
+  outline: none;
+}
+
+.button__slider--icon {
+  width: 15px;
+  height: 15px;
+  fill: #888b94;
+  text-align: center;
+  line-height: 100%;
 }
 
 .container {

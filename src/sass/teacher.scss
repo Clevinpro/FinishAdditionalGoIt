@@ -7,14 +7,85 @@
         font-size: 20px;
         font-style: $font-Oswald;
         text-transform: uppercase;
-    }
+        margin-bottom: 60px;
+        }
     &__header--modif{
         color: $color-yeollow;
-    }
+        }
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        }
+    &__item {
+        position: relative;
+        height: 580px;
+        width: 380px;
+        background: #fcfcfe;
+        &:not(:last-of-type) {
+            margin-right: 40px;
+        }
+        }
+    
     &__img {
         width: 380px;
         height: 290px;
         background-size: inherit;
+        margin-bottom: 30px;
+    }
+    &__name--box {
+        background: $color-blue;
+        width: 220px;
+        height: 35px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        line-height: 35px;
+        position: absolute;
+        top: 270px;
+        left: 30px;
+        font-style: $font-Helvetica;
+        font-size: 16px;
+    }
+    &__list,
+    &__skills{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+        }
+    &__skills{
+        padding-left: 10px;
+        
+        }
+    &__skills--item {
+        text-align: start;
+        color: $color-text--main;
+        font-style: $font-Helvetica;
+    }
+    &__tasks {
+        padding-left: 10px;
+        color: $color-text--tasks;
+        font-weight: bold;
+        font-style: $font-Helvetica;
+    }
+}
+.button__slider {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    box-shadow: 0px 11px 100px -23px rgba(0,0,0,1);
+    &:hover,
+    &:focus {
+        outline: none; 
+    }
+    &--icon {
+        width: 15px;
+        height: 15px;
+        fill: $color-text--main;
+        text-align: center;
+        line-height: 100%;
     }
 }
 
