@@ -1,0 +1,202 @@
+.section2 {
+  text-align: center;
+  background-image: url('../../images/sec2_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 75px;
+
+  &:hover h2 {
+    color: palevioletred;
+  }
+  &__question {
+    font-size: 30px;
+    font-family: 'HelveticaNeueCyr-Heavy';
+    font-weight: 400;
+    font-style: normal;
+    color: #e8e8f2;
+    margin-bottom: 11px;
+  }
+  &__title {
+    font-family: 'Oswald';
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+
+    &::before {
+      content: '[ ';
+      color: #edc65a;
+    }
+
+    &::after {
+      content: ' ]';
+      color: #edc65a;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    width: 291px;
+    margin: 0 auto;
+
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 1px 1px 5px #edc65a;
+      font-weight: bold;
+    }
+  }
+
+  &__photo {
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    font-family: 'mistral';
+    color: #edc65a;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  &__info {
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section2 {
+    padding-bottom: 170px;
+    background-position: 0px 150px;
+
+    &__question {
+      font-size: 60px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__list {
+      display: flex;
+      flex-flow: column;
+      width: 580px;
+      margin: 0 auto;
+    }
+
+    &__item {
+      display: inline-block;
+      margin: 0;
+      width: 580px;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 45px;
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      &:hover img {
+        box-shadow: none;
+        transform: scale(1.05);
+      }
+
+      &--facebook {
+        order: 3;
+      }
+
+      &--spaceX {
+        order: 2;
+      }
+
+      &--apple {
+        order: 4;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__photo {
+      width: 230px;
+      height: 230px;
+      margin: 0;
+    }
+
+    &__item-content {
+      padding-left: 45px;
+      display: flex;
+      flex-flow: column-reverse wrap;
+      text-align: left;
+      width: 300px;
+    }
+
+    &__name {
+      position: relative;
+      margin: 0;
+      font-size: 30px;
+      padding-left: 25px;
+
+      &::before {
+        position: absolute;
+        left: -50px;
+        top: -10px;
+        content: '';
+        display: block;
+        width: 53px;
+        height: 31px;
+        background-image: url('../images/sec2_arrow.png');
+      }
+    }
+  }
+
+  &__info {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section2 {
+    padding-bottom: 130px;
+
+    &__question {
+      font-size: 90px;
+    }
+
+    &__title {
+      width: auto;
+      font-size: 30px;
+    }
+
+    &__list {
+      max-width: 1100px;
+      width: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: auto;
+
+      &--facebook {
+        order: 1;
+      }
+
+      &--spaceX {
+        order: 2;
+      }
+
+      &--apple {
+        order: 3;
+      }
+    }
+  }
+}
