@@ -1,6 +1,7 @@
 /*
    Import partials below
 */
+@import './normalize';
 @import './variables.scss';
 @import './fonts.scss';
 @import './basic.scss';
@@ -16,3 +17,4 @@
 //    font-family: "HelveticaNeueCyr";
 //    font-size: 25px;
 // }
+@import './header.scss';
