@@ -7,8 +7,10 @@
 @import './normalize';
 
 // section-4 test
-@import './helpers/placeholders-s4test';
+@import './visuallyhidden';
+@import './helpers/placeholders-s4t';
 @import './components/section4_test';
+@import './components/media_s4t';
 
 // h1 {
 //    font-family: "HelveticaNeueCyr";
