@@ -475,7 +475,7 @@ template {
 }
 
 .btn__application {
-  background-image: linear-gradient(270deg, #de47ec 0%, #75a8f9 100%);
+  background: linear-gradient(270deg, #de47ec 0%, #75a8f9 100%);
   box-shadow: 5.5px 9.526px 16px 0px rgba(73, 119, 237, 0.23);
   width: 270px;
   height: 54px;
@@ -488,6 +488,12 @@ template {
   line-height: 1.2;
   display: block;
   margin: 0 auto 36px;
+  cursor: pointer;
+  transition: background-position 0.5s linear;
+}
+
+.btn__application:hover {
+  background-position: 240px;
 }
 
 .socials-link {
@@ -622,6 +628,8 @@ h1 {
   .application-socials::after {
     right: -564px;
     bottom: -246px;
+    -webkit-animation: rocket 6s;
+    animation: rocket 6s;
   }
 
   .application-socials {
@@ -644,4 +652,60 @@ h1 {
   .legal-notice {
     padding-bottom: 80px;
   }
+
+@-webkit-keyframes rocket {
+    0% {
+      bottom: -246px;
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+
+    35% {
+      bottom: -123px;
+      right: -500px;
+      -webkit-transform: rotatey(360deg);
+      transform: rotatey(360deg);
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+    }
+
+    100% {
+      bottom: 400px;
+      right: 400px;
+      -webkit-transform: rotatey(360deg);
+      transform: rotatey(360deg);
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+    }
+}
+
+@keyframes rocket {
+    0% {
+      bottom: -246px;
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+
+    35% {
+      bottom: -123px;
+      right: -500px;
+      -webkit-transform: rotatey(360deg);
+      transform: rotatey(360deg);
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+    }
+
+    100% {
+      bottom: 400px;
+      right: 400px;
+      -webkit-transform: rotatey(360deg);
+      transform: rotatey(360deg);
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+    }
+}
 }
