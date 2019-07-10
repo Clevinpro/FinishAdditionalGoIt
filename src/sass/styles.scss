@@ -5,4 +5,16 @@
 @import './variables.scss';
 @import './fonts.scss';
 @import './basic.scss';
+@import './normalize';
+
+// section-4 test
+@import './visuallyhidden';
+@import './helpers/placeholders-s4t';
+@import './components/section4_test';
+@import './components/media_s4t';
+
+// h1 {
+//    font-family: "HelveticaNeueCyr";
+//    font-size: 25px;
+// }
 @import './header.scss';
