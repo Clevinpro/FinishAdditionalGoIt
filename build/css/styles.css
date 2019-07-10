@@ -438,6 +438,7 @@ template {
 }
 
 .teacher {
+  overflow-x: hidden;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -457,7 +458,7 @@ template {
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .teacher__header--modif {
@@ -469,8 +470,6 @@ template {
 
 .teacher__list {
   display: flex;
-  flex-flow: nowrap;
-  justify-content: space-around;
 }
 
 .teacher__item {
@@ -490,7 +489,6 @@ template {
   object-fit: cover;
   width: 380px;
   height: 290px;
-  background-size: inherit;
   margin-bottom: 30px;
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
@@ -578,10 +576,6 @@ template {
   width: 20px;
   height: 20px;
   fill: #888b94;
-  text-align: center;
-  line-height: 100%;
-  font-size: 20px;
-  font-weight: bold;
 }
 
 .container {
@@ -807,15 +801,6 @@ template {
   .button__slider--right {
     left: 775px;
   }
-
-  .teacher__list {
-    max-width: 1220px;
-    flex-wrap: nowrap;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    position: relative;
-    left: 50%;
-  }
 }
 
 @media (max-width: 500px) {
@@ -824,32 +809,28 @@ template {
   }
 
   .button__slider--left {
-    left: 450px;
+    left: 282px;
   }
 
   .button__slider--right {
-    left: 720px;
+    left: 555px;
   }
 
-  .teacher__list {
-    flex-wrap: nowrap;
-  }
-
-  .teacher__list__name--box {
+  .teacher__name--box {
     left: 25px;
   }
 
-  .teacher__list__item {
+  .teacher__item {
     width: 270px;
   }
 
-  .teacher__list__item:first-of-type {
+  .teacher__item:first-of-type {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     position: relative;
   }
 
-  .teacher__list__item:last-of-type {
+  .teacher__item:last-of-type {
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
     position: relative;

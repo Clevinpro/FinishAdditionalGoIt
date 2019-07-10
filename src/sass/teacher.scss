@@ -1,4 +1,6 @@
+
 .teacher {
+    overflow-x: hidden;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -15,7 +17,7 @@
         font-weight: bold;
         letter-spacing: 3px;
         text-transform: uppercase;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
         }
 
     &__header--modif {
@@ -26,8 +28,6 @@
         }
     &__list {
         display: flex;
-        flex-flow: nowrap;
-        justify-content: space-around;
         }
     &__item {
         position: relative;
@@ -41,9 +41,8 @@
         }
     &__img {
         object-fit: cover;
-        width: 380px;
+        width   : 380px;
         height: 290px;
-        background-size: inherit;
         margin-bottom: 30px;
         filter: grayscale(0.8);
         &:hover {   
@@ -118,11 +117,7 @@
     &--icon {
         width: 20px;
         height: 20px;
-        fill: $color-text--main;
-        text-align: center;
-        line-height: 100%;
-        font-size: 20px;
-        font-weight: bold;
+        fill: $color-text--main;   
     }
 }
 
@@ -130,35 +125,26 @@
 @media (max-width: 1300px) {
     .button__slider {
         &--left {
-            left:395px;
+            left: 395px;
         }
         &--right {
             left: 775px;
         }
-    }
-    .teacher__list {
-        max-width: 1220px;
-        flex-wrap: nowrap;
-        transform: translateX(-50%);
-        position: relative;
-        left: 50%;
-    }
-}
+    }}
+    
+
 
 @media (max-width: 500px) {
     .button__slider {
         top: 160px;
         &--left {
-            left:450px;
+            left:282px;
         }
         &--right {
-            left: 720px;
+            left: 555px;
         }
     }
     .teacher {
-        &__list {
-            flex-wrap: nowrap;
-        
         &__name--box {
         left: 25px;
             }
@@ -172,7 +158,7 @@
             transform: translateX(50%);
             position: relative;
             }      
-        }  
-        }
+        }   
+        
     }
 }
