@@ -1,8 +1,15 @@
 /*
    Import partials below
 */
+@import './normalize';
 @import './variables.scss';
 @import './fonts.scss';
 @import './basic.scss';
 @import './header.scss';
-@import './normalize';
+@import './visuallyhidden';
+@import './helpers/placeholders-s4t';
+@import './components/section4_test';
+@import './components/media_s4t';
+@import './components/teacher.scss';
+
+
