@@ -1,14 +1,18 @@
 /*
    Import partials below
 */
+@import './normalize';
 @import './variables.scss';
 @import './fonts.scss';
 @import './basic.scss';
 @import './normalize';
 @import './container-footer';
 @import './section-contacts';
-
-h1 {
-  font-family: 'HelveticaNeueCyr';
-  font-size: 25px;
-}
+@import './container.scss';
+@import'./components/section2';
+@import './header.scss';
+@import './visuallyhidden';
+@import './helpers/placeholders-s4t';
+@import './components/section4_test';
+@import './components/media_s4t';
+@import './components/teacher.scss';
