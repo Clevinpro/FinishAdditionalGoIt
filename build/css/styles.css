@@ -513,27 +513,27 @@ template {
 }
 
 @media screen and (min-width: 768px) {
-  .section2 {
+  .section2 .section2 {
     padding-bottom: 170px;
     background-position: 0px 150px;
   }
 
-  .section2__question {
+  .section2 .section2__question {
     font-size: 60px;
   }
 
-  .section2__title {
+  .section2 .section2__title {
     font-size: 20px;
   }
 
-  .section2__list {
+  .section2 .section2__list {
     display: flex;
     flex-flow: column;
     width: 580px;
     margin: 0 auto;
   }
 
-  .section2__item {
+  .section2 .section2__item {
     display: inline-block;
     margin: 0;
     width: 580px;
@@ -542,39 +542,39 @@ template {
     margin-bottom: 45px;
   }
 
-  .section2__item:hover {
+  .section2 .section2__item:hover {
     box-shadow: none;
   }
 
-  .section2__item:hover img {
+  .section2 .section2__item:hover img {
     box-shadow: none;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
 
-  .section2__item--facebook {
+  .section2 .section2__item--facebook {
     order: 3;
   }
 
-  .section2__item--spaceX {
+  .section2 .section2__item--spaceX {
     order: 2;
   }
 
-  .section2__item--apple {
+  .section2 .section2__item--apple {
     order: 4;
   }
 
-  .section2__item:last-of-type {
+  .section2 .section2__item:last-of-type {
     margin-bottom: 0px;
   }
 
-  .section2__photo {
+  .section2 .section2__photo {
     width: 230px;
     height: 230px;
     margin: 0;
   }
 
-  .section2__item-content {
+  .section2 .section2__item-content {
     padding-left: 45px;
     display: flex;
     flex-flow: column-reverse wrap;
@@ -582,14 +582,14 @@ template {
     width: 300px;
   }
 
-  .section2__name {
+  .section2 .section2__name {
     position: relative;
     margin: 0;
     font-size: 30px;
     padding-left: 25px;
   }
 
-  .section2__name::before {
+  .section2 .section2__name::before {
     position: absolute;
     left: -50px;
     top: -10px;
@@ -600,26 +600,26 @@ template {
     background-image: url("../images/sec2_arrow.png");
   }
 
-  __info {
+  .section2__info {
     font-size: 23px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .section2 {
+  .section2 .section2 {
     padding-bottom: 130px;
   }
 
-  .section2__question {
+  .section2 .section2__question {
     font-size: 90px;
   }
 
-  .section2__title {
+  .section2 .section2__title {
     width: auto;
     font-size: 30px;
   }
 
-  .section2__list {
+  .section2 .section2__list {
     max-width: 1100px;
     width: auto;
     display: flex;
@@ -627,19 +627,19 @@ template {
     justify-content: space-between;
   }
 
-  .section2__item {
+  .section2 .section2__item {
     width: auto;
   }
 
-  .section2__item--facebook {
+  .section2 .section2__item--facebook {
     order: 1;
   }
 
-  .section2__item--spaceX {
+  .section2 .section2__item--spaceX {
     order: 2;
   }
 
-  .section2__item--apple {
+  .section2 .section2__item--apple {
     order: 3;
   }
 }

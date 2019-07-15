@@ -68,134 +68,136 @@
     margin: 0 auto;
     margin-bottom: 34px;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .section2 {
-    padding-bottom: 170px;
-    background-position: 0px 150px;
 
-    &__question {
-      font-size: 60px;
+
+  @media screen and (min-width: 768px) {
+    .section2 {
+      padding-bottom: 170px;
+      background-position: 0px 150px;
+
+      &__question {
+        font-size: 60px;
+      }
+
+      &__title {
+        font-size: 20px;
+      }
+
+      &__list {
+        display: flex;
+        flex-flow: column;
+        width: 580px;
+        margin: 0 auto;
+      }
+
+      &__item {
+        display: inline-block;
+        margin: 0;
+        width: 580px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 45px;
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        &:hover img {
+          box-shadow: none;
+          transform: scale(1.05);
+        }
+
+        &--facebook {
+          order: 3;
+        }
+
+        &--spaceX {
+          order: 2;
+        }
+
+        &--apple {
+          order: 4;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+
+      &__photo {
+        width: 230px;
+        height: 230px;
+        margin: 0;
+      }
+
+      &__item-content {
+        padding-left: 45px;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        text-align: left;
+        width: 300px;
+      }
+
+      &__name {
+        position: relative;
+        margin: 0;
+        font-size: 30px;
+        padding-left: 25px;
+
+        &::before {
+          position: absolute;
+          left: -50px;
+          top: -10px;
+          content: '';
+          display: block;
+          width: 53px;
+          height: 31px;
+          background-image: url('../images/sec2_arrow.png');
+        }
+      }
     }
 
-    &__title {
-      font-size: 20px;
-    }
-
-    &__list {
-      display: flex;
-      flex-flow: column;
-      width: 580px;
-      margin: 0 auto;
-    }
-
-    &__item {
-      display: inline-block;
-      margin: 0;
-      width: 580px;
-      display: flex;
-      justify-content: flex-start;
-      margin-bottom: 45px;
-
-      &:hover {
-        box-shadow: none;
-      }
-
-      &:hover img {
-        box-shadow: none;
-        transform: scale(1.05);
-      }
-
-      &--facebook {
-        order: 3;
-      }
-
-      &--spaceX {
-        order: 2;
-      }
-
-      &--apple {
-        order: 4;
-      }
-
-      &:last-of-type {
-        margin-bottom: 0px;
-      }
-    }
-
-    &__photo {
-      width: 230px;
-      height: 230px;
-      margin: 0;
-    }
-
-    &__item-content {
-      padding-left: 45px;
-      display: flex;
-      flex-flow: column-reverse wrap;
-      text-align: left;
-      width: 300px;
-    }
-
-    &__name {
-      position: relative;
-      margin: 0;
-      font-size: 30px;
-      padding-left: 25px;
-
-      &::before {
-        position: absolute;
-        left: -50px;
-        top: -10px;
-        content: '';
-        display: block;
-        width: 53px;
-        height: 31px;
-        background-image: url('../images/sec2_arrow.png');
-      }
+    &__info {
+      font-size: 23px;
     }
   }
 
-  &__info {
-    font-size: 23px;
-  }
-}
+  @media screen and (min-width: 1200px) {
+    .section2 {
+      padding-bottom: 130px;
 
-@media screen and (min-width: 1200px) {
-  .section2 {
-    padding-bottom: 130px;
-
-    &__question {
-      font-size: 90px;
-    }
-
-    &__title {
-      width: auto;
-      font-size: 30px;
-    }
-
-    &__list {
-      max-width: 1100px;
-      width: auto;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-    }
-
-    &__item {
-      width: auto;
-
-      &--facebook {
-        order: 1;
+      &__question {
+        font-size: 90px;
       }
 
-      &--spaceX {
-        order: 2;
+      &__title {
+        width: auto;
+        font-size: 30px;
       }
 
-      &--apple {
-        order: 3;
+      &__list {
+        max-width: 1100px;
+        width: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+
+      &__item {
+        width: auto;
+
+        &--facebook {
+          order: 1;
+        }
+
+        &--spaceX {
+          order: 2;
+        }
+
+        &--apple {
+          order: 3;
+        }
       }
     }
   }
