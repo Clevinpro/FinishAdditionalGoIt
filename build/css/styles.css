@@ -1026,6 +1026,7 @@ template {
   background-size: cover;
   position: relative;
   z-index: 1;
+  margin-bottom: 50px;
 }
 
 .nav {
@@ -2017,6 +2018,7 @@ img {
 
   .header {
     padding-bottom: 226px;
+    margin-bottom: 100px;
   }
 
   .container {
