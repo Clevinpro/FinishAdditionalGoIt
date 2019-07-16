@@ -639,6 +639,27 @@ img {
 }
 
 @media (min-width: 768px) {
+  .skills_list_basic {
+    max-width: 1220px;
+    width: 100%;
+  }
+
+  .skills-list {
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skills-block {
+    max-width: 290px;
+  }
+
+  .enroll-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
   .visually {
     display: block;
   }

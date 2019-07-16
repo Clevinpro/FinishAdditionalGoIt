@@ -41,7 +41,7 @@ margin-bottom: 30px;
 }
 .skills_description{
     font-family: "HelveticaNeueCyr-Roman";
-    font-size: 14px; 
+    font-size: 14px;
 }
 .sk-desc-b{
     font-family: "HelveticaNeueCyr-Bold";
@@ -87,6 +87,29 @@ margin-bottom: 30px;
     &:hover{
         background-color: #e4c162;
         cursor: pointer;
-        box-shadow: none;        
+        box-shadow: none;
     }
+}
+
+@media (min-width: 768px) {
+  .skills_list_basic {
+    max-width: 1220px;
+    width: 100%;
+  }
+
+  .skills-list {
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skills-block {
+    max-width: 290px;
+  }
+
+  .enroll-btn {
+    display: block;
+    margin: 0 auto;
+  }
 }
