@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
    Import partials below
 */
@@ -419,7 +421,7 @@ template {
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
+  src: url("../fonts/Helvetica.woff2") format("woff2"), url("../fonts/Helvetica.woff") format("woff");
 }
 
 @font-face {
@@ -939,7 +941,7 @@ template {
 
 .section2__question {
   font-size: 30px;
-  font-family: 'HelveticaNeueCyr-Heavy';
+  font-family: 'Helvetica';
   font-weight: 400;
   font-style: normal;
   color: #e8e8f2;
@@ -994,7 +996,7 @@ template {
 }
 
 .section2__info {
-  font-family: 'HelveticaNeueCyr-Roman';
+  font-family: 'Helvetica';
   font-size: 16px;
   margin: 0 auto;
   margin-bottom: 34px;
@@ -1504,7 +1506,7 @@ input[type="radio"].visually-hidden {
 
 .form_education--title1 {
   position: relative;
-  font-family: 'HelveticaNeueCyr';
+  font-family: 'Helvetica';
   font-weight: 700;
 }
 
@@ -1519,7 +1521,7 @@ input[type="radio"].visually-hidden {
 
 .form_education--title2 {
   position: relative;
-  font-family: 'HelveticaNeueCyr';
+  font-family: 'Helvetica';
   font-weight: 700;
 }
 
@@ -1534,7 +1536,7 @@ input[type="radio"].visually-hidden {
 
 .form_education--title3 {
   position: relative;
-  font-family: 'HelveticaNeueCyr';
+  font-family: 'Helvetica';
   font-weight: 700;
 }
 
@@ -1549,7 +1551,7 @@ input[type="radio"].visually-hidden {
 
 .form_education-text {
   width: 160px;
-  font-family: 'HelveticaNeueCyr';
+  font-family: 'Helvetica';
   font-weight: 200;
 }
 
@@ -1609,6 +1611,136 @@ input[type="radio"].visually-hidden {
   text-align: center;
   width: 227px;
   letter-spacing: 0.48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.courses {
+  padding-top: 48px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.courses-main {
+  width: 206px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.courses-main__image {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.courses-main__title {
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  color: #282828;
+  font-size: 15px;
+  font-family: 'Oswald-Bold';
+}
+
+.courses-main__title::before {
+  content: '[ ';
+  color: #fec02a;
+}
+
+.courses-main__title::after {
+  content: ' ]';
+  color: #fec02a;
+}
+
+.courses-main__text {
+  color: #fec02a;
+  font-size: 16px;
+  font-family: 'Helvetica';
+  margin-bottom: 22px;
+}
+
+.courses-blocks-block {
+  padding: 36px;
+  width: 320px;
+  height: 230px;
+  margin: 0 auto;
+  background-color: #f4f9fe;
+  list-style: none;
+}
+
+.courses-blocks-block2,
+.courses-blocks-block4 {
+  background-color: #e5f1fb;
+}
+
+.courses-blocks-block__title {
+  font-size: 20px;
+  font-family: 'Helvetica';
+  color: #282828;
+  margin-bottom: 26px;
+}
+
+.courses-blocks-block__title::before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  content: '  ';
+  background-image: url(../images/star.png);
+  background-repeat: no-repeat;
+  background-size: containt;
+  margin-right: 18px;
+}
+
+.courses-blocks-block__age {
+  position: relative;
+  font-size: 25px;
+  font-family: 'Helvetica';
+  color: #fec02a;
+  margin-bottom: 16px;
+}
+
+.courses-blocks-block__age::after {
+  position: absolute;
+  top: -25%;
+  margin-left: 5px;
+  padding-bottom: 2px;
+  content: 'років';
+  font-size: 13px;
+  font-family: 'Helvetica';
+  color: #fec02a;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.courses-blocks-block__info {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Helvetica';
+  color: #000000;
+}
+
+.Розробка_комп_ютерних_ігор__Опанування_мови_C__ {
+  font-size: 14px;
+  font-family: 'Helvetica';
+  color: black;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 35.234px;
+  top: 2759.038px;
+  width: 235px;
+  height: 63px;
+  z-index: 89;
 }
 
 @media screen and (min-width: 767px) {
@@ -1964,6 +2096,61 @@ input[type="radio"].visually-hidden {
     width: 412px;
     height: 344px;
   }
+
+  .courses {
+    padding-top: 88px;
+    width: 768px;
+  }
+
+  .courses-main {
+    width: 768px;
+  }
+
+  .courses-main__image {
+    margin-bottom: 38px;
+  }
+
+  .courses-main__title {
+    font-size: 20px;
+    margin-bottom: 38px;
+  }
+
+  .courses-main__text {
+    font-size: 20px;
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+
+  .courses-blocks {
+    width: 684px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .courses-blocks-block {
+    width: 342px;
+    height: 262px;
+    background-color: #f4f9fe;
+  }
+
+  .courses-blocks-block2,
+  .courses-blocks-block3 {
+    background-color: #e5f1fb;
+  }
+
+  .courses-blocks-block__title {
+    font-size: 25px;
+  }
+
+  .courses-blocks-block__age {
+    font-size: 30px;
+  }
+
+  .courses-blocks-block__info {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2102,6 +2289,28 @@ input[type="radio"].visually-hidden {
   .s4test_form__question {
     width: 100%;
     margin-bottom: 42px;
+  }
+
+  .courses {
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 78px;
+    padding-bottom: 60px;
+  }
+
+  .courses-blocks {
+    width: 1104px;
+    margin: 0 auto;
+  }
+
+  .courses-blocks-block {
+    width: 276px;
+    background-color: #f4f9fe;
+  }
+
+  .courses-blocks-block2,
+  .courses-blocks-block4 {
+    background-color: #e5f1fb;
   }
 }
 
