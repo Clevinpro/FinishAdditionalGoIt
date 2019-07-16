@@ -4,6 +4,59 @@
    Import partials below
 */
 
+<<<<<<< HEAD
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald-Light";
+  src: url("../fonts/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Roman";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Bold";
+  src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Heavy";
+  src: url("../fonts/HelveticaNeueCyr-Heavy.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Heavy.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+=======
+>>>>>>> master
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -377,11 +430,125 @@ template {
   display: none;
 }
 
+<<<<<<< HEAD
+* {
+  padding: 0 auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 300px;
+}
+
+/*SKILLS ITSELF BLOCK*/
+
+.skills_list {
+  list-style: none;
+}
+
+.skills_title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.number1 {
+  color: #c7007c;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.number2 {
+  color: #eec14d;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.number3 {
+  color: #5f7cec;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.skills_img {
+  width: 138px;
+  height: 138px;
+  margin-bottom: 30px;
+}
+
+.skills_description {
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 14px;
+}
+
+.sk-desc-b {
+  font-family: "HelveticaNeueCyr-Bold";
+  font-size: 14px;
+}
+
+.skills_list_basic {
+  padding: 0 10px 0 10px;
+  max-width: 290px;
+}
+
+.skills-block {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.m5-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 50px 0 20px 0;
+  font-family: "Oswald-Bold";
+  text-align: center;
+}
+
+.m5-title::before {
+  content: '[';
+  color: #f3d071;
+}
+
+.m5-title::after {
+  content: ']';
+  color: #f3d071;
+}
+
+.enroll-btn {
+  background-color: #f3d071;
+  border: none;
+  height: 55px;
+  width: 270px;
+  border-radius: 30px;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 10px 20px #f9e8bd, 0 6px 6px #f9e8bd;
+  font-family: "HelveticaNeueCyr-Bold";
+  color: #fff;
+  font-size: 13px;
+}
+
+.enroll-btn:hover {
+  background-color: #e4c162;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1232px;
+=======
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
+>>>>>>> master
 }
 
 @font-face {
@@ -459,7 +626,35 @@ img {
   height: auto;
 }
 
+<<<<<<< HEAD
+@media (min-width: 768px) {
+  .skills_list_basic {
+    max-width: 1220px;
+    width: 100%;
+  }
+
+  .skills-list {
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skills-block {
+    max-width: 290px;
+  }
+
+  .enroll-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .visually {
+    display: block;
+  }
+=======
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+>>>>>>> master
 
 /* Document
    ========================================================================== */
