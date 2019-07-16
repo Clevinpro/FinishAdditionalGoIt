@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.courses {
+  padding-top: 48px;
+  width: 320px;
+  margin: 0 auto;
+
+  &-main {
+    width: 206px;
+    margin: 0 auto;
+    text-align: center;
+
+    &__image {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      color: #282828;
+      font-size: 15px;
+      font-family: 'Oswald';
+
+      &::before {
+        content: '[ ';
+        color: #fec02a;
+      }
+
+      &::after {
+        content: ' ]';
+        color: #fec02a;
+      }
+    }
+
+    &__text {
+      color: #fec02a;
+      font-size: 16px;
+      font-family: 'Helvetica';
+      margin-bottom: 22px;
+    }
+  }
+
+  &-blocks {
+    &-block {
+      padding: 36px;
+      width: 320px;
+      height: 230px;
+      margin: 0 auto;
+      background-color: #f4f9fe;
+      list-style: none;
+
+      &2,
+      &4 {
+        background-color: #e5f1fb;
+      }
+
+      &__title {
+        font-size: 20px;
+        font-family: 'Helvetica';
+        color: #282828;
+        margin-bottom: 26px;
+        // position: relative;
+
+        &::before {
+          // position: absolute;
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          content: '  ';
+          background-image: url(../images/star.png);
+          background-repeat: no-repeat;
+          background-size: containt;
+          margin-right: 18px;
+        }
+      }
+
+      &__age {
+        position: relative;
+        font-size: 25px;
+        font-family: 'Helvetica';
+        color: #fec02a;
+        margin-bottom: 16px;
+
+        &::after {
+          position: absolute;
+          top: -25%;
+          margin-left: 5px;
+          padding-bottom: 2px;
+          content: 'років';
+          font-size: 13px;
+          font-family: 'Helvetica';
+          color: #fec02a;
+          border-bottom: solid;
+          border-width: 1px;
+        }
+      }
+
+      &__info {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: 'Helvetica';
+        color: #000000;
+      }
+    }
+  }
+}
+
+.Розробка_комп_ютерних_ігор__Опанування_мови_C__ {
+  font-size: 14px;
+  font-family: 'Helvetica';
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 35.234px;
+  top: 2759.038px;
+  width: 235px;
+  height: 63px;
+  z-index: 89;
+}
+
+@media (min-width: 768px) {
+  .courses {
+    padding-top: 88px;
+    width: 768px;
+
+    &-main {
+      width: 768px;
+
+      &__image {
+        margin-bottom: 38px;
+      }
+
+      &__title {
+        font-size: 20px;
+        margin-bottom: 38px;
+      }
+
+      &__text {
+        font-size: 20px;
+        width: 460px;
+        margin: 0 auto;
+        margin-bottom: 36px;
+      }
+    }
+
+    &-blocks {
+      width: 684px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      &-block {
+        width: 342px;
+        height: 262px;
+        background-color: #f4f9fe;
+
+        &2,
+        &3 {
+          background-color: #e5f1fb;
+        }
+
+        &__title {
+          font-size: 25px;
+        }
+
+        &__age {
+          font-size: 30px;
+        }
+
+        &__info {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .courses {
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 78px;
+    padding-bottom: 60px;
+
+    &-blocks {
+      width: 1104px;
+      margin: 0 auto;
+
+      &-block {
+        width: 276px;
+        background-color: #f4f9fe;
+
+        &2,
+        &4 {
+          background-color: #e5f1fb;
+        }
+      }
+    }
+  }
+}
